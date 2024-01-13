@@ -1,0 +1,819 @@
+@font-face {
+    font-family: satoshi;
+    src: url(/fonts/Satoshi.ttf);
+
+}
+
+@font-face {
+    
+    font-family: integral CF;
+    src: url(/fonts/integralcf.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Announcement Bar */
+.announcement-bar{
+    height: auto;
+    max-width: 100%;
+    /* border: 2px solid red; */
+    background-color: black;
+}
+
+.announcement-bar > p{
+    text-align: center;
+    font-family: "Satoshi";
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.announcement-bar > p > span{
+    border-bottom: 1.5px solid white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Navbar */
+
+.navbar{
+    height: auto;
+    max-width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+
+.nav-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-title a{
+    text-decoration: none;
+    color: black;
+    font-family: "Integral CF";
+    font-size: 2em;
+    margin-left: 45%;
+}
+
+
+.nav{
+    width: 26%;
+    margin-left: 50px; 
+}
+.nav > ul{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    
+}
+
+.nav > ul > li {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-family: "Satoshi";
+    font-weight: 600;
+}
+.nav > ul > li > a:hover{
+    border-bottom: 2px solid black;
+
+}
+
+
+.nav-search{
+    width: 40%;
+    /* border: 1px solid red; */
+}
+
+.nav-search > svg {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 17px;
+}
+
+
+.search{
+
+    padding: 15px;
+    padding-left: 60px;
+    border-radius: 50px;
+    width: 100%; 
+    background-color: #f0f0f0;
+    border: none;  
+
+}
+
+input::placeholder{
+    display: flex;
+    font-size: 16px;
+    font-family: "Satoshi";
+}
+
+
+.nav-icons{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 70px;
+    justify-content: space-between;
+    margin-right: -20px;
+}
+
+.nav-icons > .cart-icon:hover , .nav-icons > .profile-icon:hover {
+    cursor: pointer;
+}
+
+
+
+/* Main Container */
+
+.main-container{
+    height: auto;
+    max-width: 100%;
+    /* border: 1px solid red; */
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    /* border: 1px solid green; */
+    width: 99%;
+}
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    margin-top: 70px;
+    margin-left: 60px;
+}
+
+.left-content > h1 {
+    font-family: "Integral CF";
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.left-content > p {
+    font-family: "Satoshi";
+    font-size: 1em;
+}
+
+.left-content > button {
+    font-family: "Satoshi";
+    font-size: 1em;
+    color: white;
+
+    width: 200px;
+    height: 48px;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.left-content > .stats {
+    /* border: 1px solid rgb(68, 0, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats > .hr {
+
+    border-left: 1px solid #d6d6d6;
+    height: 100%;
+    width: 0;
+}
+
+.stats > .stat1 > :nth-child(1){
+    font-family: "Satoshi";
+    font-weight: 900;
+    font-size: 35px;
+}
+.stats > .stat1 > :nth-child(2){
+    font-family: "Satoshi";
+    font-size: 1em;
+}
+.stats > .stat2 > :nth-child(1){
+    font-family: "Satoshi";
+    font-weight: 900;
+    font-size: 35px;
+}
+.stats > .stat2 > :nth-child(2){
+    font-family: "Satoshi";
+    font-size: 1em;
+}
+.stats > .stat3 > :nth-child(1){
+    font-family: "Satoshi";
+    font-weight: 900;
+    font-size: 35px;
+}
+.stats > .stat3 > :nth-child(2){
+    font-family: "Satoshi";
+    font-size: 1em;
+}
+
+.right-content{
+    /* border: 1px solid aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Brands Bar */
+
+.brands {
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.brand-bar > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.brand-bar > ul > li{
+    list-style: none;
+}
+
+
+/* Product Catalogue 1 and Product Catalogue 2 */
+
+.product-catalogue1, .product-catalogue2 {
+    height: auto;
+    max-width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-catalogue1 > h1 {
+    font-family: "Integral CF";
+    font-size: 2.8em;
+    padding: 80px 0px 50px 0px;
+}
+.product-catalogue2 > h1 {
+    font-family: "Integral CF";
+    font-size: 2.8em;
+    padding: 0px 0px 50px 0px;
+}
+
+.product-catalogue1 > button {
+    font-family: "Satoshi";
+    font-size: 1em;
+    font-weight: 500;
+    height: auto;
+    width: 200px;
+    padding: 10px 50px 10px 50px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: 1px solid #d6d6d6;
+    background-color: white;
+}
+
+.product-catalogue2 > button{
+    font-family: "Satoshi";
+    font-size: 1em;
+    font-weight: 500;
+    height: auto;
+    width: 200px;
+    padding: 10px 50px 10px 50px;
+    margin-top: 20px;
+    margin-bottom: 65px;
+    border-radius: 50px;
+    border: 1px solid #d6d6d6;
+    background-color: white;
+}
+
+.product-catalogue1 > button:hover {
+    cursor: pointer;
+}
+.product-catalogue2 > button:hover {
+    cursor: pointer;
+}
+
+.all-products {
+    height: auto;
+    max-width: 100%;
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 20px 0;
+}
+
+.product1 {
+    height: auto;
+    max-width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product1 > img {
+    border-radius: 20px;
+}
+
+.product1 > p {
+    font-family: "Satoshi";
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+
+.product2 {
+    height: auto;
+    max-width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product2 > img {
+    border-radius: 20px;
+}
+
+.product2 > p {
+    font-family: "Satoshi";
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+
+.product3 {
+    height: auto;
+    max-width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product3 > img {
+    border-radius: 20px;
+}
+
+.product3 > p {
+    font-family: "Satoshi";
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+
+.product4 {
+    height: auto;
+    max-width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product4 > img {
+    border-radius: 20px;
+}
+
+.product4 > p {
+    font-family: "Satoshi";
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.rating {
+    height: auto;
+    max-width: 100%;
+    /* border: 1px solid greenyellow; */
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.rating > span {
+    font-family: "Satoshi";
+    font-size: 0.9em;
+}
+
+.hr1 {
+
+    border-bottom: 1px solid #d6d6d6;
+    height: 0px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin: 60px;
+
+}
+
+
+/* Dress Style */
+
+.dress-style {
+    height: auto;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-dress-style{
+    height: auto;
+    width: 90%;
+    /* border: 2px solid greenyellow; */
+    background-color: #f0f0f0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 30px;
+    
+}
+.main-dress-style > h1{
+    font-family: "Integral CF";
+    font-size: 2.8em;
+    padding: 70px 0 40px 0;
+}
+
+.dress-style1, .dress-style2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.style1, .style2{
+    position: relative;
+}
+
+.style1 > img, .style2 > img{
+    border-radius: 20px;
+}
+.dress-style1 > .style1 > span {
+    position: absolute;
+
+    margin-left: -370px;
+    margin-top: 20px;
+    
+
+    font-family: "Satoshi";
+    font-size: 2.1em;
+    font-weight: 800;
+}
+.dress-style1 > .style2 > span {
+    position: absolute;
+
+    margin-left: -610px;
+    margin-top: 20px;
+    
+
+    font-family: "Satoshi";
+    font-size: 2.1em;
+    font-weight: 800;
+}
+
+
+.style3 > img, .style4 > img{
+    border-radius: 20px;
+}
+
+.style3, .style4{
+    position: relative;
+}
+
+.dress-style2 {
+    display: flex;
+    gap: 70px;
+    padding-bottom: 60px;
+}
+.dress-style2 > .style3 > span {
+    position: absolute;
+
+    margin-left: -600px;
+    margin-top: 30px;
+    
+
+    font-family: "Satoshi";
+    font-size: 2.1em;
+    font-weight: 800;
+
+}
+.dress-style2 > .style4 > span {
+    position: absolute;
+
+    margin-left: -320px;
+    margin-top: 25px;
+    
+
+    font-family: "Satoshi";
+    font-size: 2.1em;
+    font-weight: 800;
+}
+
+
+/* Reviews */
+
+.reviews {
+    height: auto;
+    width: 100%;
+    /* border: 2px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews > h1 {
+    font-family: "Integral CF";
+    font-size: 2.8em;
+    height: auto;
+    width: 90%;
+    /* border: 2px solid blueviolet; */
+
+    padding: 80px 0 40px 40px;
+}
+
+.reviews-div {
+    height: auto;
+    width: 90%;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review1, .review2, .review3 {
+    height: 250px;
+    width: 30%;
+
+    border: 1px solid #d6d6d6;
+    border-radius: 20px;
+
+    padding: 30px;
+}
+
+.review1 > .p1, .review2 > .p1, .review3 > .p1 {
+    font-family: "Satoshi";
+    font-size: 1.2em;
+    font-weight: 800;
+    padding: 10px 0 10px 0;
+}
+
+.review1 > .p2, .review2 > .p2, .review3 > .p2 {
+    font-family: "Satoshi";
+}
+
+
+/* Footer */
+
+footer {
+    height: auto;
+    width: 100%;
+    /* border: 2px solid green; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-letter {
+    height: auto;
+    width: 80%;
+
+    /* border: 2px solid rgb(47, 85, 255); */
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+
+    padding: 35px;
+
+    background-color: black;
+    border-radius: 20px;
+
+    margin-top: 90px;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.new-letter-content{
+    /* border: 2px solid red; */
+    width: 60%;
+}
+
+.new-letter-content > h1 {
+    font-family: "Integral CF";
+    font-size: 2.5em;
+    color: white;
+}
+
+.news-letter-subscribe{
+    /* border: 2px solid blue; */
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.email > input{
+    width: 90%;
+    /* border: 1px solid red; */
+    padding: 15px;
+    padding-left: 60px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.email::placeholder{
+    display: flex;
+    font-size: 1.2em;
+    font-family: "Satoshi";
+}
+
+.email > svg {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 17px;
+}
+
+.subscribe > button {
+    width: 90%;
+    /* border: 1px solid red; */
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    border: none;
+    border: none;
+
+    font-family: "Satoshi";
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.subscribe > button:hover{
+    cursor: pointer;
+}
+
+
+
+/* Footer Content */
+
+.footer-content {
+    height: auto;
+    width: 100%;
+
+    /* border: 2px solid red; */
+    background-color: #f0f0f0;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+    padding: 140px 130px 80px 130px;
+    margin-top: 190px;
+}
+
+.site-info, .company, .help, .faq, .resources {
+    height: auto;
+    width: 20%;
+    /* border: 1px solid brown; */
+}
+
+.site-info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.site-info > h1 {
+    font-family: "Integral CF";
+}
+
+.site-info > p {
+    font-family: "Satoshi";
+    font-size: 0.8em;
+}
+
+.site-info > .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.company{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.company > h3 {
+    font-family: "Satoshi";
+    letter-spacing: 5px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.footer-content > .company > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-content > .company > ul > li {
+    list-style: none;
+    font-family: "Satoshi";
+}
+
+.help{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.help > h3 {
+    font-family: "Satoshi";
+    letter-spacing: 5px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.footer-content > .help > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-content > .help > ul > li {
+    list-style: none;
+    font-family: "Satoshi";
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.faq > h3 {
+    font-family: "Satoshi";
+    letter-spacing: 5px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.footer-content > .faq > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-content > .faq > ul > li {
+    list-style: none;
+    font-family: "Satoshi";
+}
+
+.resources{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.resources > h3 {
+    font-family: "Satoshi";
+    letter-spacing: 5px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.footer-content > .resources > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-content > .resources > ul > li {
+    list-style: none;
+    font-family: "Satoshi";
+}
